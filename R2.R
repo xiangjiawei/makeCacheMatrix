@@ -1,4 +1,4 @@
-##the first function, makeVector creates a special "vector", which is really a list containing a function to
+##the first function, makeCacheMatrix creates a special "matrix", which is really a list containing a function to
 
 ##set the value of the matrix
 ##get the value of the matrix
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(x = numeric()) {
   setinverse <- function(inverse) i <<- inverse ##set the inverse of the matrix
   getinverse <- function() i  ##get the inverse of the matrix
   list(set = set, get = get,
-       setinverse = setminverse,
+       setinverse = setinverse,
        getinverse = getinverse)
 }
 
